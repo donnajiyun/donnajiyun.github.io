@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'neue-haas-grotesk-display';
+    font-style: normal;
+    font-weight: 500;
+    font-display: auto; /* or block, swap, fallback, optional */
+    src: url('/font/NeueHaasDisplayRoman.ttf') format('truetype');
+    unicode-range: U+000-5FF; /* Latin glyphs */
+  }
+
+  @font-face {
+    font-family: 'FontsFree-Net-Ogg-Italic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 90px;
+    font-display: auto; /* or block, swap, fallback, optional */
+    src: url('/font/FontsFree-Net-Ogg-Italic.ttf') format('truetype');
+    unicode-range: U+000-5FF; /* Latin glyphs */
+  }
+
+  
+* {
+    color: #0069e3;
+    background-color: #f3f3f3;
+    font-size: 88px;
+    font-weight: 500;
+    line-height: 0%;
+    font-family: "neue-haas-grotesk-display", "sans-serif"
+}
+
+.logo-wrap {
+    display: flex;
+}
+
+.logo-wrap .copyright {
+    margin-left: 8px;
+}
+
+.logo {
+    font-size: 13px;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+
+}
+.menu-wrap {
+    display: flex;
+}
+.menu-wrap .menu {
+    font-size: 14px;
+}
+.menu-wrap .menu + .menu {
+    margin-left: 56px;
+}
+.title-wrap {
+    padding-left: 120px;
+    padding-top: 250px;
+    padding-bottom: 120px;
+}
+
+.title-2 {
+    margin-top: 48px;
+}
+
+.title-3 {
+    margin-top: 48px;
+}
+
+.a {
+    font-family: "FontsFree-Net-Ogg-Italic"
+}
+
+.title-wrap img {
+  height: 60px;
+}
+
+
+
+.button-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.button-wrap button {
+    font-size: 18px;
+    font-weight: 400px;
+    text-align: center;
+    padding: 26px;
+    border:none;
+    border-bottom: 1px solid #0069e3;
+    position: relative;
+    /* mwidth: 101px; */
+}
+
+.button-wrap .button-icon-arrow{
+    height:  11px;
+    position: absolute;
+    width:  11px;
+    right: 0;
+}
+
+.button-wrap .button-icon-arrow:before {
+    border-right: 1px solid #0069e3;
+    border-top: 1px solid #0069e3;
+    box-sizing: border-box;
+    content: "";
+    height:  8px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 8px;
+}
+
+.button-wrap .button-icon-arrow:after {
+    background-color: #0069e3;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    width: 12px;
+}
